@@ -3,5 +3,4 @@ pandas
 numpy
 google-search-results
 selenium==4.17.2
-re
 google-api-python-client
