@@ -2,6 +2,6 @@ streamlit
 pandas
 numpy
 google-search-results
-selenium
+selenium==4.17.2
 re
 google-api-python-client
