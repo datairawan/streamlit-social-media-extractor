@@ -1,0 +1,9 @@
+streamlit
+pandas
+numpy
+google-search-results
+selenium
+random
+time
+re
+google-api-python-client
