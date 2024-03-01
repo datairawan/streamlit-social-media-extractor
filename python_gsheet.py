@@ -1,15 +1,16 @@
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
+import config
+creds = config.creds
     
 class config_gsheet:
     
     def __init__(self):
         
         self.SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
-        self.SERVICE_ACCOUNT_FILE = 'creds.json'
+        #self.SERVICE_ACCOUNT_FILE = 'creds.json'
 
-        self.credentials = service_account.Credentials.from_service_account_file(
-                           self.SERVICE_ACCOUNT_FILE, scopes=self.SCOPES)
+        self.credentials = creds
 
         self.service = build('sheets', 'v4', credentials=self.credentials)
         self.sheet = self.service.spreadsheets()
