@@ -6,7 +6,7 @@ class config_gsheet:
     def __init__(self):
         
         self.SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
-        self.SERVICE_ACCOUNT_FILE = 'C:/Users/User/Documents/Data Science/creds.json'
+        self.SERVICE_ACCOUNT_FILE = 'creds.json'
 
         self.credentials = service_account.Credentials.from_service_account_file(
                            self.SERVICE_ACCOUNT_FILE, scopes=self.SCOPES)
